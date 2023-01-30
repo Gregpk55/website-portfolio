@@ -14,8 +14,25 @@ Secondary Color (Orange) : #e0b354;
 */
 /*font*/
 /*color*/
+:root{
+  --primary-font: 'Roboto';
+  }
+  /*color*/
+  :root {
+    --primary-color: white;
+    --secondary-color: #e0b354;
+    --dark-grey: #2b2b2b;
+    --lightgray: #D3D3D3;
+    --visited: #0e2d4b;
+    --active: #3b94e7;
+  }
+  p{
+    color:var(--primary-color);
+}
+
 
 body {
+    background-color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -28,6 +45,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 700;
+    color: white;
 }
 
 h2 {
@@ -44,7 +62,7 @@ h3 {
 }
 /* button */
 a {
-    color: #145DA0
+    color: var(--primary-color)
   }
   
     a:visited {
@@ -285,6 +303,7 @@ font-size: 22px;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
+color:white;
 }
 .button__cv {
 clear: both;
@@ -296,6 +315,7 @@ clear: both;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    color:white
 }
 /*cv button*/
 .button__cv_lo {
@@ -357,7 +377,7 @@ to {
 }
 .cloud-front {
 -webkit-animation: 30s cloud-move infinite alternate linear;
-        animation: 30s cloud-move infinite alternate linear;
+        animation: 30s cloud-move infinite alternate linear;       
 }
 
 .cloud-back {
