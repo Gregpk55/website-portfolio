@@ -57,8 +57,9 @@ h2 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 700;
+    color:var(--primary-color)
 }
 /* button */
 a {
@@ -67,7 +68,7 @@ a {
   
     a:visited {
         /* visited link */
-        color: #0e2d4b
+        color:var(--primary-color)
   }
       
       a:active {
@@ -139,7 +140,7 @@ a {
     background-color: #e0b354;
     color: #2b2b2b;
   }
-  /* sttyling navigation list iteams home,about,contact*/
+  /* styling navigation list iteams home,about,contact*/
   .navigation-list__item--active {
     text-decoration: none;
     list-style-type: none;
@@ -148,14 +149,15 @@ a {
     display: inline-block;
     margin-left: 15px;
   }
+  
   /*Logo*/  
   .logo__item {
     height: auto;
     width: 200px;
     border-radius: 50%;
-
-
-  }
+    cursor:pointer;
+    
+}
   /* portriat*/
   .profile__portrait {
     float: left;
